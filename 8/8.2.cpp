@@ -25,9 +25,9 @@ int main() {
     std::cout << value << std::endl;
     
     
-    auto str = "abc"_wow1;
+    auto str1 = "abc"_wow1;
     auto num = 1_wow2;
-    std::cout << str << std::endl;
+    std::cout << str1 << std::endl;
     std::cout << num << std::endl;
     return 0;
 }

@@ -41,8 +41,8 @@ int main() {
 
     
     std::cout << add1<int, int, int>(1,1) << std::endl;
-    std::cout << add1<int, int>(1,1) << std::endl;
-    std::cout << add1<int, int>(1,1) << std::endl;
+    std::cout << add2<int, int>(1,1) << std::endl;
+    std::cout << add3<int, int>(1,1) << std::endl;
     
     
     return 0;

@@ -32,9 +32,11 @@ enum class new_enum : unsigned int{
 
 int main() {
     
-    if (Left::left_value1 == Right::right_value2) {
+    if (Left::left_value1 == Right::right_value1) {
         std::cout << "Left::value1 == Right::value2" << std::endl;
-    }
+    } else {
+        std::cout << "Left::value1 != Right::value2" << std::endl;		
+	}
     
     // 引发编译错误
     // if(new_enum::value1 == 1) {

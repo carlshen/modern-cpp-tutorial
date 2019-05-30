@@ -52,13 +52,13 @@ void printf1(T value, Args... args) {
     printf1(args...);
 }
 // 2.初始化列表展开解参数包
-//template<typename T, typename... Args>
-//auto printf2(T value, Args... args) {
-//    std::cout << value << std::endl;
-//    return std::initializer_list<T>{([&] {
-//        std::cout << args << std::endl;
-//    }(), value)...};
-//}
+template<typename T, typename... Args>
+auto printf2(T value, Args... args) {
+    std::cout << value << std::endl;
+    return std::initializer_list<T>{([&] {
+        std::cout << args << std::endl;
+    }(), value)...};
+}
 
 int main() {
     
@@ -71,6 +71,6 @@ int main() {
     magic(1,"");
     
     printf1(1, 2.3, "abc");
-    //printf2(1, 2.3, "abc");
+    printf2(1, 2.3, "abc");
     return 0;
 }

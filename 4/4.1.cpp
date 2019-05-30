@@ -27,7 +27,7 @@ int main() {
     foo(arr.data(), arr.size());
     
     // 更多接口使用
-    std::sort(arr.begin(), arr.end());
+    //std::sort(arr.begin(), arr.end());
     for(auto &i : arr)
         std::cout << i << std::endl;
     

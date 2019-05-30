@@ -9,6 +9,11 @@
 #include <iostream>
 #include <utility>
 
+template<typename T, typename... Args>
+std::unique_ptr<T> make_unique(Args&&... args) {
+    return std::unique_ptr<T>(new T(std::forward<Args>(args)...));
+}
+
 void learn_lambda_func_1() {
     int value_1 = 1;
     auto copy_value_1 = [value_1] {
